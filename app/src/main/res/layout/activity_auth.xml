@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:padding="@dimen/spacing_standard_new"
+    android:layout_height="match_parent"
+
+    tools:context=".views.activtys.AuthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/computer_img"
+
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:text="Stey Lecgnd"
+                android:textSize="@dimen/font_size_xlarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:text="Stey Lecgnd Stey Lecgnd Stey Lecgnd Stey Lecgnd Stey Lecgnd Stey Lecgnd Stey "
+   />
+        </LinearLayout>
+
+
+
+
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/orang_prime"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/orang_prime"
+            app:tabTextColor="#7E7E7E" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPager"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#6F373737" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_standard"
+                    android:text="or"
+
+
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:background="#6F373737" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:padding="@dimen/spacing_standard"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <android.widget.Button
+                    android:id="@+id/btnGoogleSginup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="login with google"
+                    android:background="@drawable/circl_button_tow"
+                    android:paddingHorizontal="@dimen/spacing_xxxlarge"
+                    android:drawableStart="@drawable/google_icon"
+
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/btnFicebookSginup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/spacing_standard_new"
+                    android:drawableLeft="@drawable/facebook_icon_36x36"
+                    android:background="@drawable/circl_button_tow"
+                    android:paddingHorizontal="@dimen/spacing_xxxlarge"
+                    android:text="Login With Google" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

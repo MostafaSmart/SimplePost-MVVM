@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="Homie" />
+
+    <item
+        android:id="@+id/nav_add_post"
+        android:icon="@drawable/maximize_icon"
+        android:title="Add Post" />
+
+    <item
+        android:id="@+id/nav_activity"
+        android:icon="@drawable/layout_icon"
+        android:title="Activity" />
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/acount_icon"
+        android:title="Account" />
+
+</menu>
